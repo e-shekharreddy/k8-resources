@@ -8,4 +8,4 @@ spec:
     image: nginx
   - name: almalinux
     image: almalinux
-    commadn: ["sleep", "1000"]
+    commad: ["sleep", "1000"]
