@@ -9,7 +9,7 @@ metadata:
     tier: frontend
     component: frontend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     # by using these lables replica set select the pod
     matchLabels:
@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.29.7-trixie-perl
+        image: nginx:latest
