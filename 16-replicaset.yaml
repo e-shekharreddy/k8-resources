@@ -12,7 +12,7 @@ spec:
   replicas: 3
   selector:
     # by using these lables replica set select the pod
-    matchlabels:
+    matchLabels:
       project: roboshop
       purpose: rs-demo
       tier: frontend
