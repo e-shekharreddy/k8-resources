@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    omage: nginx
+    image: nginx
     env:
     - name: project
       value: roboshop
