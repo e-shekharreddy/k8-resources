@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: exampl-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: nginx-logs
+      mountPath: /var/log/nginx
+  - image: almalinux:9
+    name: almalinux
+    command: ["sleep", "2000"]
+    volumeMounts:
+    - name: /mnt/nginx-logs
+      mountPath: nginx-logs
+      readOnly: true
+  # this is pod level
+  volumes:
+  - name: shared-data
+    emptyDir:
+      sizeLimit: 500Mi
