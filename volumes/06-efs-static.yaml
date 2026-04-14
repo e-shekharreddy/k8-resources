@@ -38,7 +38,7 @@ spec:
     - name: efs-static-volume
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1b
+    topology.kubernetes.io/zone: us-east-1a
   volumes:
   - name: efs-static-volume
     persistentVolumeClaim:
