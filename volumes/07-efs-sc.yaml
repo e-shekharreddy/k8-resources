@@ -8,4 +8,4 @@ parameters:
   fileSystemId: fs-07bf085d8a47b8dba
   directoryPerms: "700"
   basePath: "/rboshop"
-reclaimPolicy: Retain
+# reclaimPolicy: Retain
