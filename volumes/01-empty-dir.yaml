@@ -7,14 +7,14 @@ spec:
   - name: nginx
     image: nginx
     volumeMounts:
-    - name: nginx-log
-      mountPath: /var/log/nginx
-  - image: almalinux:9
-    name: almalinux
+    - mountPath: /var/log/nginx
+      name: nginx-logs
+  - name: almalinux
+    image: almalinux:9    
     command: ["sleep", "2000"]
     volumeMounts:
-    - name: /mnt/nginx-log
-      mountPath: nginx-log
+    - mountPath: nginx-logs
+      name: /mnt/nginx-logs      
       readOnly: true
   # this is pod level
   volumes:
