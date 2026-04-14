@@ -13,11 +13,11 @@ spec:
     image: almalinux:9    
     command: ["sleep", "2000"]
     volumeMounts:
-    - mountPath: nginx-logs
-      name: /mnt/nginx-logs      
+    - mountPath: /mnt/nginx-logs
+      name: nginx-logs
       readOnly: true
   # this is pod level
   volumes:
-  - name: nginx-logs
+  - name: shared-data
     emptyDir:
       sizeLimit: 500Mi
