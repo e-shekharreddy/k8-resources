@@ -7,7 +7,5 @@ parameters:
   provisioningMode: efs-ap
   fileSystemId: fs-07bf085d8a47b8dba
   directoryPerms: "700"
-  reclaimPolicy: Retain
-  basePath: "/rboshop" 
-  
-  
+  basePath: "/rboshop"
+reclaimPolicy: Retain
