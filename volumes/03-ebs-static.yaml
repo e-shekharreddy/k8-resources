@@ -1,4 +1,4 @@
-# PV access mode we use RWO ReadWriteOnce & Retention policie we use Retaine
+# PV access mode we use RWO ReadWriteOnce & Retention policie we use Retain
 apiVersion: v1
 kind: PersistentVolume
 metadata:
