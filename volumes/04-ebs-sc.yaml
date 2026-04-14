@@ -4,5 +4,5 @@ kind: StorageClass
 metadata:
   name: roboshop-ebs
 provisioner: ebs.csi.aws.com
-volumeBindingMode: WaitForFirstConsumer
+volumeBindingMode: WaitForFirstConsumer # "kubectl get sc"
 reclaimPolicy: Retain # "kubectl get sc rboshop-ebs -o yaml" & "kubectl api-resources | grep sc"
